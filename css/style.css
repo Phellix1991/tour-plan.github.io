@@ -404,7 +404,7 @@ template {
 }
 .user__name {
   margin-left: 18px;
-  ont-size: 14px;
+  font-size: 14px;
   line-height: 18px;
   color: #333333;
 }
@@ -459,6 +459,16 @@ template {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
+}
+.hotel-grid {
+  display: flex;
+  justify-content: space-between;
+}
+.hotel-grid__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
 }
 
 .stars {
@@ -517,9 +527,12 @@ template {
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   z-index: 10;
 }
+.swiper-slider__image {
+  width: 100%;
+}
 
 .slider {
-  width: 728px;
+  max-width: 728px;
 }
 .slider-button {
   position: absolute;
@@ -542,6 +555,90 @@ template {
 .slider-button--prev {
   left: 18px;
   background-image: url(../img/errow-prev.svg);
+}
+
+.booking {
+  max-width: 100%;
+  min-height: 210px;
+  padding: 27px;
+  background-color: #0A223D;
+  color: #fff;
+  border-radius: 8px;
+}
+.booking__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.booking__button {
+  width: 100%;
+  min-height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+.price__start {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+}
+.price__pricetag {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+.price__per-room {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.person-room__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.person-room__description {
+  margin-left: 9px;
+}
+
+.call-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+.call-center__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+.call-center__number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+.call-center__num {
+  margin-left: 8px;
 }
 
 @media (max-width: 1200px) {
@@ -626,4 +723,4 @@ template {
   .logo {
     width: 99px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
