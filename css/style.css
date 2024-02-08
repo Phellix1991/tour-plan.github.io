@@ -641,9 +641,20 @@ template {
   margin-left: 8px;
 }
 
+.map {
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    max-width: 600px;
+  }
+  .swiper-slider__image {
+    height: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -668,6 +679,15 @@ template {
   }
   .search__input {
     width: 340px;
+  }
+  .hotel-grid {
+    flex-direction: column;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .slider {
+    max-width: 100%;
   }
 }
 @media (max-width: 768px) {
