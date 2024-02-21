@@ -51,17 +51,7 @@
         background: linear-gradient(180.00deg, rgba(0, 122, 223, 0.48),rgba(255, 255, 255, 0.13) 100%)
         z-index: 10
     &__button
-      position: absolute
-      z-index: 99
-      top: 50%
-      transform: translateY(-50%)
-      width: 30px
-      height: 30px
-      border: none
-      cursor: pointer
-      background-repeat: no-repeat
-      background-position: center
-      background-size: 10px
+      @include buttonSlider(50%)
       &--next
         right: 18px
         background-image: url(../img/errow-next.svg)
