@@ -838,12 +838,84 @@ template {
   display: contents;
 }
 
+.activities {
+  padding: 60px 0 98px 0;
+}
+.activities__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+.activities-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 24px 26px;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 35.294%, rgb(10, 34, 61) 100%);
+  z-index: -1;
+}
+.card__image {
+  position: absolute;
+  z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.card__title {
+  margin: auto 0 18px 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.card__button {
+  font-family: Nunito;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #fff;
+  padding: 7px 22px;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
   .hotel-slider {
     width: 590px;
+  }
+  .card {
+    width: 230px;
   }
 }
 @media (max-width: 992px) {
@@ -894,6 +966,18 @@ template {
   .reviews-slider__item {
     max-width: 580px;
     padding: 0 60px 30px 64px;
+  }
+  .activities {
+    padding: 60px 0 70px 0;
+  }
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 340px;
   }
 }
 @media (max-width: 768px) {
@@ -980,6 +1064,12 @@ template {
     transform: translate(50%, 0);
     margin-right: -65px;
   }
+  .activities {
+    padding: 40px 0 60px 0;
+  }
+  .card {
+    width: 49%;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -1004,5 +1094,8 @@ template {
   }
   .reviews__title {
     font-size: 18px;
+  }
+  .card {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
