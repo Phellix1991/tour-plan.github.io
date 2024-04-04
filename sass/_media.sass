@@ -1,67 +1,140 @@
-@media ( max-width: 1200px )
+@media (max-width: 1200px)
   .container
     max-width: 960px
+
   .hotel
     &-slider
       width: 590px
+
   .card
     width: 230px
-@media ( max-width: 992px )
+
+  .footer
+    &__input
+      flex-basis: 100%
+
+@media (max-width: 992px)
   .container,
   .newsletter-wrapper
     max-width: 700px
+
   .navbar
     &-top
       padding: 30px 0
+
     &__search
       margin-left: auto
+
     &-menu
       padding: 22px 0
+
       &__link
         font-size: 12px
         line-height: 15px
+
   .logo
     width: 132px
+
   .search
     &__input
       width: 340px
+
   .hotel
     &-grid
       flex-direction: column
+
       &__info
         flex-direction: row
         width: 100%
+
     &-slider
       width: 100%
       margin-bottom: 30px
+
   .booking
     width: 340px
+
   .map
     width: 340px
     height: 210px
+
   .reviews
     &__title
       font-size: 30px
+
     &-slider
       &__item
         max-width: 580px
         padding: 0 60px 30px 64px
+
   .activities
     padding: 60px 0 70px 0
+
     &-wrapper
       flex-wrap: wrap
+
     &__card
       margin-bottom: 20px
+
   .card
     width: 340px
-@media ( max-width: 768px )
+
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(7, minmax(min-content, 1fr))
+      grid-column-gap: 0
+      grid-row-gap: 50px
+
+    &__logo
+      width: 104px
+      grid-row: 1 / 2
+      grid-column: span 2
+
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+
+    &__additional
+      grid-column: span 3
+
+    &__social
+      &-network
+        grid-row: 1 / 2
+        align-self: center
+        grid-column: span 4
+
+    &__legal
+      grid-column: span 2
+
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 5
+
+      &-form
+        grid-row: 4
+        grid-column: span 5
+
+    &__input
+      flex-basis: 47%
+
+    &__responsibility
+      grid-column: 1 / 4
+      margin: 0
+
+    &__sponsors
+      grid-column: 7
+
+@media (max-width: 768px)
   .container,
   .newsletter-wrapper
-    max-width: 576px
+    max-width: 700px
     width: 92%
+
   .navbar
     &__search, &-menu, .user
       display: none
+
   .menu-buttom
     display: flex
     width: 16px
@@ -73,81 +146,148 @@
     border: none
     background-color: $light
     cursor: pointer
+
     &__line
       width: 100%
       height: 1px
       background-color: $text-color
+
   .hotel
     padding: 5px 20px 70px 0
+
     &-info
       &__text
         width: 100%
+
       &__offer
         margin-left: 0
         order: -1
+
       &__rating
         display: none
+
     &-wrapper
       justify-content: space-between
+
     &-name
       flex-basis: 100%
+
   .stars
     padding: 0 16px 0 0
     flex-basis: content
+
   .hotel
     &-grid
       &__info
         flex-direction: column
         height: 450px
+
     &-slider
       height: 350px
+
   .booking
     width: 100%
+
   .map
     width: 100%
+
   .newsletter
     &-wrapper
       flex-direction: column
       align-items: flex-start
+
   .reviews
     &-slider
       &__item
         padding: 0 30px 30px
+
         &::after, &::before
           display: none
+
       &__button
         &--prev
           top: 32px
           left: 50%
           transform: translate(-50%, 0)
           margin-left: -65px
+
         &--next
           top: 32px
           right: 50%
           transform: translate(50%, 0)
           margin-right: -65px
+
   .activities
     padding: 40px 0 60px 0
+
   .card
     width: 49%
-@media ( max-width: 576px )
+
+@media (max-width: 576px)
   .logo
     width: 99px
+
   .hotel
     &-slider
       height: 250px
       margin-bottom: 20px
+
   .newsletter
     padding: 76px 0 83px 0
+
     &-title
       font-size: 20px
+
       &__strong
         font-size: 30px
         margin-bottom: 37px
+
   .subscribe
     width: 100%
+
   .reviews
     &__title
       font-size: 18px
+
   .card
     width: 100%
+
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(1, minmax(min-content, 1fr))
+      grid-template-areas: "logo" "network" "legal" "additional" "categories" "details" "form" "responsibility" "sponsors"
+      grid-auto-rows: min-content
+      grid-row-gap: 30px
+
+    &__logo
+      grid-area: logo
+
+    &__categories
+      grid-area: categories
+
+    &__additional
+      grid-area: additional
+
+    &__social
+      &-network
+        grid-area: network
+
+    &__legal
+      grid-area: legal
+
+    &__contact
+      &-details
+        grid-area: details
+
+      &-form
+        grid-area: form
+
+    &__input
+      flex-basis: 100%
+
+    &__responsibility
+      grid-area: responsibility
+
+    &__sponsors
+      grid-area: sponsors
+      justify-self: start
