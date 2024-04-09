@@ -29,3 +29,12 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 		enabled: true,
 	},
 })
+
+// mobile menu
+let menuBottom = document.querySelector('.menu-bottom')
+menuBottom.addEventListener('click', function () {
+	console.log('Клик по кнопке меню')
+	document
+		.querySelector('.navbar-bottom')
+		.classList.toggle('navbar-bottom--visible')
+})

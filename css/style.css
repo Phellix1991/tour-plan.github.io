@@ -338,7 +338,7 @@ template {
   justify-content: space-between;
   padding: 40px 0;
 }
-.navbar-top__menu-buttom {
+.navbar-top__menu-bottom {
   display: none;
 }
 .navbar__search {
@@ -359,6 +359,9 @@ template {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+}
+.navbar-menu__link--mobile_visible {
+  display: none;
 }
 
 .logo {
@@ -1170,10 +1173,59 @@ template {
     max-width: 700px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar .user {
+  body {
+    padding-top: 78px;
+  }
+  .navbar--mobile_fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .navbar__search--mobile_hidden, .navbar__user--mobile_hidden {
     display: none;
   }
-  .menu-buttom {
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 78px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-menu__link {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__link--mobile_visible {
+    display: block;
+  }
+  .user {
+    flex-direction: column;
+  }
+  .user__avatar {
+    margin-bottom: 10px;
+  }
+  .user__name {
+    margin-left: 0;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+  }
+  .search {
+    margin-bottom: 20px;
+  }
+  .search__input {
+    width: 245px;
+  }
+  .menu-bottom {
     display: flex;
     width: 16px;
     height: 11px;
@@ -1185,7 +1237,7 @@ template {
     background-color: #fff;
     cursor: pointer;
   }
-  .menu-buttom__line {
+  .menu-bottom__line {
     width: 100%;
     height: 1px;
     background-color: #333333;
