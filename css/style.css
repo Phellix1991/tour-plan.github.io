@@ -393,6 +393,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -1031,6 +1032,7 @@ template {
   color: #fff;
   font-size: 12px;
   font-weight: bold;
+  cursor: pointer;
 }
 .footer__info {
   font-size: 12px;
